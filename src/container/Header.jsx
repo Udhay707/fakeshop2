@@ -3,10 +3,13 @@ import { Link } from 'react-router-dom'
 const Header = () => {
     return (
         <div className="ui fixed menu">
-            <div className='ui container center'>
-                <Link to = "/" >
-                <h2>FakeShop</h2>
+            <div className='ui container center head'>
+                <Link to = "/" > 
+                    <h2>FakeShop</h2>
                 </Link>
+                <div className='source'>
+                    <a href='https://github.com/Udhay707/fakeshop2' target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>
             </div>
         </div>
     )
