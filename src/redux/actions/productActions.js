@@ -1,4 +1,4 @@
-import { SELECTED_PRODUCTS, SET_PRODUCTS } from "../constants/constats"
+import { REMOVE_SELECTED_PRODUCT, SELECTED_PRODUCTS, SET_PRODUCTS } from "../constants/constats"
 
 export const setProduct= (products) =>{
     return {
@@ -12,5 +12,11 @@ export const selectedProduct = (product) =>{
     return{
         type: SELECTED_PRODUCTS,
         payload: product
+    }
+}
+
+export const removeProduct = () =>{
+    return{
+        type: REMOVE_SELECTED_PRODUCT
     }
 }

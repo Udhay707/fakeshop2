@@ -11,7 +11,7 @@ function App() {
       <Routes>
           <Route path="/" exact={true} element={<ProductListing />} />
           <Route path="/details/:productid" exact={true} element= {<ProductDetail />} />
-          <Route path="*" exact element={<div>Page Not Found</div>} />
+          <Route path="*" element={<div className='notFound'>Page Not Found</div>} />
       </Routes>
     </Router>
     </div>

@@ -1,19 +1,28 @@
-import { SET_PRODUCTS } from "../constants/constats"
+import { REMOVE_SELECTED_PRODUCT, SELECTED_PRODUCTS, SET_PRODUCTS } from "../constants/constats"
 
 const initialState = {
-    products: [{
-        id: 10,
-        name: "udhay",
-        designation: "FullStack dev"
-    }]
+    products: []
 }
 
 export const productReducer = (state=initialState, { type, payload }) => {
     switch (type) {
         case SET_PRODUCTS:
-            return state;
+            return {...state, products: payload};
         default:
             return state;
+    }
+}
 
+export const selectedProductReducer = (state={},{type,payload}) =>{
+
+    switch(type){
+    case SELECTED_PRODUCTS:
+        return{
+            ...state, ...payload
+        }
+    case REMOVE_SELECTED_PRODUCT:
+        return{}   
+    default:
+        return state
     }
 }
