@@ -94,6 +94,16 @@
   .wide{
     width: 25% !important;
   }
+@media only screen and (max-width:768px) {
+  .wide{
+    width: 50% !important;
+  }
+}
+@media only screen and (max-width:512px) {
+  .wide{
+    width: 100% !important;
+  }
+}
   .notFound{
     margin-top: 10%;
     align-items: center;
