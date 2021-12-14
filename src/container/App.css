@@ -133,4 +133,9 @@
 .head i{
   font-size: 225%;
 }
-  
+.heigh{
+  height: 21vh !important;
+}
+.headers{
+  height: 12vh !important;
+}

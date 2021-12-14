@@ -15,7 +15,7 @@ const Product = () => {
                                     <div className='image'>
                                         <img src={image} alt="product" />
                                     </div>
-                                    <div className="content">
+                                    <div className="content heigh">
                                         <div className='headers'> {title} </div>
                                         <div className='meta price'>$ {price} </div>
                                         <div className='meta'>{category}</div>
